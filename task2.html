@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task2</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Temperature Converter</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <label for="inputUnit"><h5>Input Temperature:</h5></label>
+      <input type="number" id="inputTemperature" placeholder="Enter temperature" />
+      <select id="inputUnit">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+        <option value="rankine">Rankine</option>
+        <option value="reaumur">Reaumur</option>
+        <option value="triple">Triple Point of Water</option>
+      </select>
+    </div>
+
+    <div class="container">
+      <label for="outputUnit"><h4>Output Temperature:</h4></label>
+      <input type="text" id="outputTemperature" readonly />
+      <select id="outputUnit">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+        <option value="rankine">Rankine</option>
+        <option value="reaumur">Reaumur</option>
+        <option value="triple">Triple Point of Water</option>
+      </select>
+    </div>
+
+    <br><button onclick="convertTemperature()">Convert</button>
+
+    
+  </main>
+
+ 
+
+  <script src="script.js"></script>
+</body>
+</html>
